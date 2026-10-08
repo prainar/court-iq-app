@@ -88,7 +88,7 @@ export default function Home() {
               </div>
             </div>
             <div className="compare-col new">
-              <span className="compare-tag accent">Pitch</span>
+              <span className="compare-tag accent">PBA Sports</span>
               <h3 className="h3">Our Vision</h3>
               <p>Automated, objective, and continuous — every possession analyzed the same way, every time.</p>
               <div className="compare-steps">

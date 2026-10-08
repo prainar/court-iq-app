@@ -17,7 +17,7 @@ export default function Nav() {
       {open && createPortal(<div className="nav-scrim" onClick={() => setOpen(false)} />, document.body)}
       <div className="nav-inner">
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
-          <span className="brand-mark" /> Pitch
+          <span className="brand-mark" /> PBA Sports
         </NavLink>
         <div className={`nav-links ${open ? 'open' : ''}`}>
           {links.map((link) => (

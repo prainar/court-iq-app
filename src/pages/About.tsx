@@ -28,7 +28,7 @@ export default function About() {
             basketball intelligence.
           </h1>
           <p className="lede mt-1">
-            Pitch Basketball Academy started with a simple observation: every level of basketball generates enormous
+            PBA Sports started with a simple observation: every level of basketball generates enormous
             amounts of game footage, but only a tiny fraction of teams have the staff or tools to turn it into real
             insight.
           </p>
@@ -45,7 +45,7 @@ export default function About() {
             </div>
             <p>
               Coaches record games, then spend hours re-watching footage to catch what they missed live — and even
-              then, human attention and bias limit what gets noticed. We're building Pitch Basketball Academy to
+              then, human attention and bias limit what gets noticed. We're building PBA Sports to
               close that gap: an AI platform that watches every possession the same way, every time, and turns it
               into insight a coaching staff can act on immediately.
             </p>

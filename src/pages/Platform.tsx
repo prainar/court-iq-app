@@ -227,7 +227,7 @@ pitchacademy.app/dashboard
             <span className="eyebrow">Solutions</span>
             <h2 className="h2">Built for every level of the game.</h2>
             <p className="lede">
-              Instead of one-size-fits-all analytics, Pitch Basketball Academy adapts to the program using it.
+              Instead of one-size-fits-all analytics, PBA Sports adapts to the program using it.
             </p>
           </Reveal>
           <Reveal className="grid grid-3">
@@ -247,7 +247,7 @@ pitchacademy.app/dashboard
             <span className="eyebrow">Technology</span>
             <h2 className="h2">Built with modern AI infrastructure.</h2>
             <p className="lede">
-              Pitch Basketball Academy is designed as a cloud-native AI solution — video processing, model inference,
+              PBA Sports is designed as a cloud-native AI solution — video processing, model inference,
               and analytics all run on scalable, secure infrastructure rather than a single local machine.
             </p>
           </Reveal>

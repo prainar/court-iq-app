@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-col">
             <Link to="/" className="brand" style={{ marginBottom: '1rem' }}>
-              <span className="brand-mark" /> Pitch
+              <span className="brand-mark" /> PBA Sports
             </Link>
             <p>AI-powered basketball performance intelligence, built to help every player improve.</p>
           </div>
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© 2026 Pitch Basketball Academy. All rights reserved.</span>
+          <span>© 2026 PBA SPORTS AND ALLIED VENTURES PRIVATE LIMITED. All rights reserved.</span>
         </div>
       </div>
     </footer>
