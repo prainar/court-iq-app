@@ -143,8 +143,9 @@ p { color: var(--text-dim); }
   z-index: 100;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  background: rgba(11, 13, 16, 0.82);
+  background: rgba(11, 13, 16, 0.96);
   border-bottom: 1px solid var(--line);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
 }
 .nav-inner {
   position: relative;
