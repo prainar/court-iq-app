@@ -16,7 +16,7 @@
   --radius: 18px;
   --radius-sm: 10px;
   --container: 1240px;
-  --nav-height: 92px;
+  --nav-height: 64px;
   --font: "Helvetica Neue", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono: "SF Mono", "Roboto Mono", "Courier New", Consolas, monospace;
 }
@@ -152,7 +152,7 @@ p { color: var(--text-dim); }
   z-index: 2;
   width: 100%;
   min-height: var(--nav-height);
-  padding: 1.15rem clamp(1.25rem, 3vw, 3rem);
+  padding: 0.7rem clamp(1.25rem, 3vw, 3rem);
   box-sizing: border-box;
   display: flex;
   align-items: center;
