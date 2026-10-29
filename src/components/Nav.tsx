@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { NavLink } from 'react-router-dom'
 
@@ -11,9 +11,17 @@ const links = [
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
-    <nav className="nav">
+    <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
       {open && createPortal(<div className="nav-scrim" onClick={() => setOpen(false)} />, document.body)}
       <div className="nav-inner">
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
