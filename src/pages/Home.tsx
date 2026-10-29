@@ -92,7 +92,7 @@ export default function Home() {
               </div>
             </div>
             <div className="compare-col new">
-              <span className="compare-tag accent">Pitch</span>
+              <span className="compare-tag accent">PBA Sports</span>
               <h3 className="h3">Our Vision</h3>
               <p>Automated, objective, and continuous — every possession analyzed the same way, every time.</p>
               <div className="compare-steps">
@@ -239,7 +239,7 @@ export default function Home() {
             <h2 className="h2">Video intelligence isn't the future. It's the fastest-moving part of the game.</h2>
             <p className="lede">
               The sports-analytics market is growing ~27% a year, and video analysis is its single
-              biggest segment. Elite teams already run on it — Pitch brings it to everyone else.
+              biggest segment. Elite teams already run on it — PBA Sports brings it to everyone else.
             </p>
           </Reveal>
           <Reveal className="grid grid-3">
@@ -254,7 +254,7 @@ export default function Home() {
       <section className="section-pad-sm section-alt section-glow">
         <div className="container">
           <Reveal className="section-head reveal-up">
-            <span className="eyebrow">Why Pitch</span>
+            <span className="eyebrow">Why PBA Sports</span>
             <h2 className="h2">Pro-level analysis, without a pro-level staff.</h2>
             <p className="lede">
               The insight elite teams pay analysts for — automated, objective, and priced for

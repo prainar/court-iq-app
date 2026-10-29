@@ -30,9 +30,9 @@ export default function About() {
           </h1>
           <p className="lede mt-1">
             Sports analytics is racing toward a ~$52B market by 2034, and video is its biggest
-            segment — but that firepower is locked up at the top of the sport. Pitch Basketball
-            Academy exists to hand it to everyone else: the schools, academies, and clubs where
-            most of the game is actually played.
+            segment — but that firepower is locked up at the top of the sport. PBA Sports exists to
+            hand it to everyone else: the schools, academies, and clubs where most of the game is
+            actually played.
           </p>
         </div>
       </header>
@@ -48,7 +48,7 @@ export default function About() {
             <p>
               A proper film breakdown costs a coach 15–30 minutes <em>per player</em> — so it
               happens twice a season when it should happen every week. And even then, human
-              attention and bias cap what gets noticed. We're building Pitch to close that gap: an
+              attention and bias cap what gets noticed. We're building PBA Sports to close that gap: an
               AI platform that watches every possession the same way, every time, and turns it into
               insight a coaching staff can act on immediately — in minutes, not lost evenings.
             </p>

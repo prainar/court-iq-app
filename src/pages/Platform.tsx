@@ -54,7 +54,7 @@ export default function Platform() {
             End to End.
           </h1>
           <p className="lede mt-1">
-            From the first whistle to the final buzzer, Pitch tracks every player and every
+            From the first whistle to the final buzzer, PBA Sports tracks every player and every
             possession — turning raw gameplay into the coaching intelligence teams act on. One
             pipeline: computer vision in, decisions out.
           </p>
@@ -131,7 +131,7 @@ export default function Platform() {
             <span className="eyebrow">Solutions</span>
             <h2 className="h2">Built for every level of the game.</h2>
             <p className="lede">
-              Instead of one-size-fits-all analytics, Pitch Basketball Academy adapts to the program using it.
+              Instead of one-size-fits-all analytics, PBA Sports adapts to the program using it.
             </p>
           </Reveal>
           <Reveal className="grid grid-3 stagger auto">
@@ -151,7 +151,7 @@ export default function Platform() {
             <span className="eyebrow">Technology</span>
             <h2 className="h2">Built with modern AI infrastructure.</h2>
             <p className="lede">
-              Pitch Basketball Academy is designed as a cloud-native AI solution — video processing, model inference,
+              PBA Sports is designed as a cloud-native AI solution — video processing, model inference,
               and analytics all run on scalable, secure infrastructure rather than a single local machine. It's the
               same class of computer vision reshaping the sport at the pro level, built to run on footage from any
               camera you already own.

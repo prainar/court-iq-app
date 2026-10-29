@@ -45,7 +45,7 @@ export default function VideoHero() {
             <span className="phero-line">{word('Get')}{word('the')}{word('edge.', true)}</span>
           </h1>
           <p className="phero-lede">
-            Pitch turns raw game footage into coach-ready insight. Our computer-vision engine
+            PBA Sports turns raw game footage into coach-ready insight. Our computer-vision engine
             watches every possession — tracking shots, movement, spacing, and fatigue — and hands
             you the decisions that change outcomes, in minutes instead of hours.
           </p>
