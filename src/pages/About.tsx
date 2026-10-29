@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import PCard from '../components/PCard'
+import CountStat from '../components/CountStat'
 
 const values = [
-  { p1: '#26302c', p2: '#12241c', num: '01', title: 'Innovation', body: 'We push at the edge of applied computer vision for sport.' },
-  { p1: '#2c2630', p2: '#1c1224', num: '02', title: 'Performance', body: "Every feature ships because it makes players better, not just because it's possible." },
-  { p1: '#302620', p2: '#241408', num: '03', title: 'Transparency', body: "We're honest about what's built, what's in progress, and what's still a roadmap item." },
-  { p1: '#242c30', p2: '#0f1a24', num: '04', title: 'Community', body: 'Open source and open research, so the whole ecosystem moves forward together.' },
+  { p1: '#26302c', p2: '#12241c', num: '01', glyph: '◎', title: 'Innovation', body: 'We push at the edge of applied computer vision for sport.' },
+  { p1: '#2c2630', p2: '#1c1224', num: '02', glyph: '↗', title: 'Performance', body: "Every feature ships because it makes players better, not just because it's possible." },
+  { p1: '#302620', p2: '#241408', num: '03', glyph: '◈', title: 'Transparency', body: "We're honest about what's built, what's in progress, and what's still a roadmap item." },
+  { p1: '#242c30', p2: '#0f1a24', num: '04', glyph: '✦', title: 'Community', body: 'Open source and open research, so the whole ecosystem moves forward together.' },
 ]
 
 const team = [
@@ -28,9 +29,10 @@ export default function About() {
             basketball intelligence.
           </h1>
           <p className="lede mt-1">
-            Pitch Basketball Academy started with a simple observation: every level of basketball generates enormous
-            amounts of game footage, but only a tiny fraction of teams have the staff or tools to turn it into real
-            insight.
+            Sports analytics is racing toward a ~$52B market by 2034, and video is its biggest
+            segment — but that firepower is locked up at the top of the sport. Pitch Basketball
+            Academy exists to hand it to everyone else: the schools, academies, and clubs where
+            most of the game is actually played.
           </p>
         </div>
       </header>
@@ -44,17 +46,23 @@ export default function About() {
               <h2 className="h2">Started from a problem every coach knows.</h2>
             </div>
             <p>
-              Coaches record games, then spend hours re-watching footage to catch what they missed live — and even
-              then, human attention and bias limit what gets noticed. We're building Pitch Basketball Academy to
-              close that gap: an AI platform that watches every possession the same way, every time, and turns it
-              into insight a coaching staff can act on immediately.
+              A proper film breakdown costs a coach 15–30 minutes <em>per player</em> — so it
+              happens twice a season when it should happen every week. And even then, human
+              attention and bias cap what gets noticed. We're building Pitch to close that gap: an
+              AI platform that watches every possession the same way, every time, and turns it into
+              insight a coaching staff can act on immediately — in minutes, not lost evenings.
             </p>
+          </Reveal>
+          <Reveal className="grid grid-3 mt-2">
+            <CountStat value="100%" label="Of possessions analyzed the same way, every game (illustrative)" />
+            <CountStat value="2hrs" label="Of manual film review collapsed into minutes per game (illustrative)" />
+            <CountStat value="5" label="Levels served — youth, school, academy, college, pro" />
           </Reveal>
         </div>
       </section>
 
       {/* Mission / Vision */}
-      <section className="section-pad-sm section-alt">
+      <section className="section-pad-sm section-alt section-glow">
         <div className="container">
           <Reveal className="grid grid-2">
             <div className="panel">
@@ -78,15 +86,15 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="section-pad">
+      <section className="section-pad section-glow">
         <div className="container">
-          <Reveal className="section-head">
+          <Reveal className="section-head reveal-up">
             <span className="eyebrow">Values</span>
             <h2 className="h2">What guides how we build.</h2>
           </Reveal>
-          <Reveal className="grid grid-4">
+          <Reveal className="grid grid-4 stagger auto">
             {values.map((v) => (
-              <PCard key={v.num} p1={v.p1} p2={v.p2} num={v.num} title={v.title} size="sm">
+              <PCard key={v.num} p1={v.p1} p2={v.p2} num={v.num} glyph={v.glyph} title={v.title} size="sm">
                 {v.body}
               </PCard>
             ))}
@@ -95,9 +103,9 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section className="section-pad-sm section-alt">
+      <section className="section-pad-sm section-alt section-glow">
         <div className="container">
-          <Reveal className="section-head">
+          <Reveal className="section-head reveal-up">
             <span className="eyebrow">Team</span>
             <h2 className="h2">A small team, building in the open.</h2>
             <p className="lede">
@@ -105,7 +113,7 @@ export default function About() {
               stage and growing deliberately.
             </p>
           </Reveal>
-          <Reveal className="grid grid-4">
+          <Reveal className="grid grid-4 stagger auto">
             {team.map((t) => (
               <PCard key={t.num} p1={t.p1} p2={t.p2} num={t.num} title={t.title} size="sm" person>
                 {t.body}
@@ -123,7 +131,7 @@ export default function About() {
             <h2 className="h2 mt-1">Coming soon.</h2>
             <p className="lede">We're not hiring yet, but we're always glad to hear from people who care about basketball and AI.</p>
             <div className="btn-row">
-              <Link to="/contact" className="btn btn-primary">
+              <Link to="/contact" className="btn btn-primary btn-glow">
                 Get in Touch
               </Link>
             </div>

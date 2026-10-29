@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react'
+import { type CSSProperties, type ReactNode } from 'react'
+import useInView from '../hooks/useInView'
 
 export default function Reveal({
   children,
@@ -9,24 +10,7 @@ export default function Reveal({
   className?: string
   style?: CSSProperties
 }) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [visible, setVisible] = useState(false)
-
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const io = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true)
-          io.unobserve(el)
-        }
-      },
-      { threshold: 0.15 },
-    )
-    io.observe(el)
-    return () => io.disconnect()
-  }, [])
+  const [ref, visible] = useInView(0.15)
 
   return (
     <div ref={ref} className={`reveal ${visible ? 'in' : ''} ${className}`} style={style}>
